@@ -1,6 +1,6 @@
 # 🔍 Visualizing `.plt` Files with VisIt
 
-You can directly visualize your solution files (`.plt`) using **[VisIt](https://wci.llnl.gov/simulation/computer-codes/visit)**, a powerful open-source visualization tool.
+You can directly visualize your solution files (`.plt`) using **[VisIt]()**, a powerful open-source visualization tool.
 
 ## ✅ Basic Steps to Plot
 
