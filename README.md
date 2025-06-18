@@ -1,6 +1,6 @@
 # 🔍 Visualizing `.plt` Files with VisIt
 
-You can directly visualize your solution files (`.plt`) using **[VisIt]()**, a powerful open-source visualization tool.
+You can directly visualize your solution files (`.plt`) using **[VisIt](https://visitusers.org/index.php?title=Downloading_and_Installing_VisIt)**, a powerful open-source visualization tool.
 
 ## ✅ Basic Steps to Plot
 
