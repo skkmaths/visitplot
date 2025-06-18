@@ -27,9 +27,9 @@ To edit axis descriptions or plot annotations:
 2. Modify labels, fonts, ticks, or background as per your preference.
 
 ## Produce figures by running .py file
-1. Run this as $visit -cli -nowin -s ./color.py sol sol.plt figure
+1. Run this as $visit -cli -nowin -s ./color.py sol sol.plt figure (For more details check the files .py)
 2. This will create a file figure.ps, you can convert this to pdf by $ps2pdf figure.ps figure.pdf
-3. For more details check the files .py
+3. Run "$pdfcrop figure.pdf" to crop the file to remove extra white space
 
 ## 🛠️ Creating Your Own `.py` Plot Script from VisIt GUI
 
