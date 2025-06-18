@@ -156,7 +156,7 @@ legend.drawMinMax = 0
 legend.drawTitle =0
 #legend.minFlag, legend.maxFlag = 0, 0
 legend.xScale = 0.75
-legend.yScale = 2.88
+legend.yScale = 0.3228
 
 # Save images of all timesteps and add each image filename to a list.
 for state in range(TimeSliderGetNStates()):
