@@ -5,7 +5,7 @@ $visit -cli -nowin -s ./color.py sol sol.plt
 #or
 '''
 Run this as follows to generate sequence of .png files
-$visit -cli -nowin -s ./uplot2.py sol 
+$visit -cli -nowin -s ./color.py sol 
 '''
 # sol -> denotes the variable name
 # If you  wish you can also specify the output file name above as
@@ -35,9 +35,12 @@ else:
 
 # Begin spontaneous state
 View2DAtts = View2DAttributes()
-View2DAtts.windowCoords = (-0.9993749856948853, 0.9993749856948853, -0.9993749856948853, 0.9993749856948853)
+#left,right,bottom, top
+View2DAtts.windowCoords = (0.005, 0.995, 0.005, 0.995)
+#adjust (left, right, bottom, top)  to move
+View2DAtts.viewportCoords = (0.15, 0.95, 0.15, 0.9)
 # Here changing the third value changes the right border space
-View2DAtts.viewportCoords = (0.24, 0.9, 0.3, 0.95) 
+#View2DAtts.viewportCoords = (0.24, 0.9, 0.3, 0.95) 
 View2DAtts.fullFrameActivationMode = View2DAtts.Auto  # On, Off, Auto
 View2DAtts.fullFrameAutoThreshold = 100
 View2DAtts.xScale = View2DAtts.LINEAR  # LINEAR, LOG
@@ -107,13 +110,13 @@ a.axes2D.yAxis.label.font.scale = 1.5
 a.axes2D.autoSetTicks = 0  # Disable automatic tick placement
 
 a.axes2D.xAxis.tickMarks.visible = 1  # Ensure tick marks are visible
-a.axes2D.xAxis.tickMarks.majorMinimum = -1.0  # Set minimum value for major ticks
+a.axes2D.xAxis.tickMarks.majorMinimum =0.0  # Set minimum value for major ticks
 a.axes2D.xAxis.tickMarks.majorMaximum = 1.0   # Set maximum value for major ticks
 a.axes2D.xAxis.tickMarks.majorSpacing = 0.2   # Set spacing between major ticks
 a.axes2D.xAxis.tickMarks.minorSpacing = 0.1   # Set spacing between major ticks
 
 a.axes2D.yAxis.tickMarks.visible = 1  # Ensure tick marks are visible
-a.axes2D.yAxis.tickMarks.majorMinimum = -1.0  # Set minimum value for major ticks
+a.axes2D.yAxis.tickMarks.majorMinimum = 0.0  # Set minimum value for major ticks
 a.axes2D.yAxis.tickMarks.majorMaximum = 1.0   # Set maximum value for major ticks
 a.axes2D.yAxis.tickMarks.majorSpacing = 0.2   # Set spacing between major ticks
 a.axes2D.yAxis.tickMarks.minorSpacing = 0.1   # Set spacing between major ticks
@@ -139,7 +142,7 @@ plotName = GetPlotList().GetPlots(0).plotName
 legend = GetAnnotationObject(plotName)
 legend.numberFormat = "%1.2f"   # turn this on to print only decimals like 0.1, 0.2, etc
 legend.managePosition = 0
-legend.position = (0.85, 0.95) 
+legend.position = (0.85, 0.9) 
 legend.fontFamily = legend.Times
 legend.fontBold = 1
 legend.fontItalic= 0
@@ -148,7 +151,7 @@ legend.drawMinMax = 0
 legend.drawTitle =0
 #legend.minFlag, legend.maxFlag = 0, 0
 legend.xScale = 0.75
-legend.yScale = 2.508
+legend.yScale = 2.88
 
 # Save images of all timesteps and add each image filename to a list.
 for state in range(TimeSliderGetNStates()):
