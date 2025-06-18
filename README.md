@@ -25,3 +25,25 @@ To edit axis descriptions or plot annotations:
 
 1. Navigate to `Controls` → `Annotation`.
 2. Modify labels, fonts, ticks, or background as per your preference.
+
+## Produce figures by running .py file
+1. Follow the instructions in the .py file to plot the solution
+
+## 🛠️ Creating Your Own `.py` Plot Script from VisIt GUI
+
+You can generate a custom plot style and export it as a Python script by following these steps:
+
+1. **Open** the **VisIt GUI**.
+2. **Load** your `.plt` file (e.g., `sol.plt`) and **draw the desired plot**.
+3. **Go to** `Controls → Command`.
+4. In the **Command** window:
+   - Click **`Record`**.
+   - Adjust the plot styling (e.g., color tables, view settings, annotations).
+   - Click **`Stop`** once done.
+5. The window will display the corresponding **Python commands**.
+6. **Copy** the relevant portion and **save it** as a Python file, e.g., `color.py`.
+7. **Run it** from the command line:
+
+```bash
+$ visit -cli -nowin -s ./color.py VariableName data.plt
+
