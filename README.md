@@ -14,8 +14,7 @@ You can directly visualize your solution files (`.plt`) using **[VisIt](https://
 To visualize in **3D** or create a **surface plot**:
 
 1. Go to `Operators` → `Transforms` → `Elevate`.
-2. After applying the elevate operator, go to `Operator Attributes` → `Transform` → `Elevate`.
-3. Under **Scaling**:
+2. Under **Scaling**:
    - Set **Auto-scaling** to `Never`.
    - Set **Elevate by variable** to your scalar field (e.g., `u`).
 
